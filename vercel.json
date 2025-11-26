@@ -9,5 +9,9 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  ],
+  "build": {
+    "env": {},
+    "command": "npm install --legacy-peer-deps && npm run build"
+  }
 }
