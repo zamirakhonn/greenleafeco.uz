@@ -1,0 +1,40 @@
+{
+  "header": {
+    "home": "Bosh sahifa",
+    "about": "Biz haqimizda",
+    "news": "Yangiliklar",
+    "products": "Eko mahsulotlar",
+    "contact": "Aloqa"
+  },
+  "about": {
+    "title": "Biz kimmiz?",
+    "intro": "Tabiiylik, sog‘lom hayot va atrof-muhit tozaligi asosida yaratilgan xalqaro brend.",
+    "buildingAlt": "Greenleaf binosi",
+    "companyTitle": "Kompaniya haqida",
+    "companyText1": "Greenleaf (Suzhou Greenleaf Daily Commodity Co. Ltd) — tabiat bilan uyg‘unlikda yashash falsafasiga asoslangan xalqaro brend. Bosh ofisi Xitoyning Suzhou shahrida joylashgan.",
+    "companyText2": "Bizning maqsadimiz — har bir oilaga sog‘lom, xavfsiz va ekologik toza mahsulotlar yetkazishdir. 6000 dan ortiq turdagi mahsulotlarimiz tabiatning nafisligini va toza havoni sizga taqdim etadi.",
+    "companyText3": "Har bir mahsulotimiz tabiatga hurmat, inson salomatligiga g‘amxo‘rlik va yangilik sari intilishdir.",
+    "missionTitle": "Bizning missiyamiz",
+    "missionSubtitle": "Tabiatdan ilhomlanib, hayotga g‘amxo‘rlik qilamiz!",
+    "missionText": "Biz barqaror mahsulotlar yaratishga intilamiz, odamlar va sayyorani himoya qilamiz, ekologik hayotni butun dunyo bo‘ylab qulay qilamiz.",
+    "toastMessage": "batafsil ma'lumot tez orada!",
+    "features": [
+      { "title": "100% Tabiiy Mahsulotlar", "text": "Barcha mahsulotlar sof tabiiy ingredientlardan tayyorlangan." },
+      { "title": "Sifatga Ishonch", "text": "Xalqaro sertifikatlar va yuqori standartlar bilan kafolatlangan." },
+      { "title": "Dunyo bo‘ylab faoliyat", "text": "30+ mamlakatda faoliyat yuritamiz – siz bizning global oilamizning bir qismisiz!" },
+      { "title": "300 000+ Hamkor", "text": "Dunyo bo‘ylab millionlab mijozlar bizga ishonadi." },
+      { "title": "$10B Maqsad", "text": "Yillik savdo o‘sishi bilan biz doimo rivojlanamiz va yangi imkoniyatlar yaratamiz." },
+      { "title": "6 000+ Mahsulot", "text": "Har xil ehtiyoj va did uchun keng assortiment." }
+    ]
+  },
+  "showcase": {
+    "titleLine1": "Greenleaf – tabiatdan ilhom,",
+    "titleLine2": "hayot uchun g‘amxo‘rlik!",
+    "brand": "Greenleaf",
+    "descriptionLine1": "6000 dan ortiq ekologik toza, xavfsiz va zamonaviy mahsulotlar jamlanmasi.",
+    "descriptionLine2": "Siz va oilangiz uchun sog‘lom tanlov!",
+    "descriptionLine3": "",
+    "btnInspiration": "Eco Jurnalda ilhom oling!",
+    "btnShop": "Mahsulotlar xaridiga o'ting"
+  }
+}

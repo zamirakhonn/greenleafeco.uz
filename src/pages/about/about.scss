@@ -1,0 +1,143 @@
+.eco-about {
+  position: relative;
+  background: linear-gradient(135deg, #e9f7ef, #f0fff4);
+  overflow: hidden;
+}
+
+.bg-shape {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+.shape1 { background: #8de4af; top: -100px; left: -50px; }
+.shape2 { background: #d4ffea; bottom: -120px; right: -40px; }
+.shape3 { background: #caffd4; top: 50%; left: 60%; transform: translate(-50%, -50%); }
+
+.eco-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 48px;
+  color: #0c6c3e;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #1e9c61;
+  margin-top: 10px;
+}
+
+// MAIN CARD
+.main-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+  margin-bottom: 50px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.main-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #0c6c3e;
+}
+
+.main-card p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+// INFO GRID
+.info-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.info-card {
+  background: white;
+  border-radius: 15px;
+  padding: 22px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+}
+
+.info-card .icon {
+  font-size: 50px;
+  color: #1e9c61;
+  margin-bottom: 15px;
+}
+
+// ANIMATIONS
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.slide-in-left {
+  animation: slideLeft 0.9s ease forwards;
+}
+
+.slide-in-right {
+  animation: slideRight 0.9s ease forwards;
+}
+
+.slide-in-up {
+  animation: slideUp 0.9s ease forwards;
+}
+
+// KEYFRAMES
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideLeft {
+  0% { opacity: 0; transform: translateX(-30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideRight {
+  0% { opacity: 0; transform: translateX(30px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

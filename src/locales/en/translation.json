@@ -1,0 +1,40 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About us",
+    "news": "News",
+    "products": "Eco products",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "Who Are We?",
+    "intro": "An international brand based on naturalness, healthy living, and environmental cleanliness.",
+    "buildingAlt": "Greenleaf Building",
+    "companyTitle": "About the Company",
+    "companyText1": "Greenleaf (Suzhou Greenleaf Daily Commodity Co. Ltd) is an international brand based on harmony with nature. The headquarters is located in Suzhou, China, in the high-tech national zone.",
+    "companyText2": "Our goal is to deliver healthy, safe, and eco-friendly products to every household. Through over 6000 types of products, we bring the essence of nature and a clean environment to you.",
+    "companyText3": "Each of our products respects nature, cares for human health, and aims for innovation.",
+    "missionTitle": "Our Mission",
+    "missionSubtitle": "Inspired by nature, caring for life!",
+    "missionText": "We strive to create sustainable products that protect people and the planet, making eco-friendly living accessible worldwide.",
+    "toastMessage": "more details coming soon!",
+    "features": [
+      { "title": "100% Natural Products", "text": "All products are made from pure natural ingredients." },
+      { "title": "Quality Assurance", "text": "Guaranteed with international certificates and high standards." },
+      { "title": "Global Presence", "text": "Operating in 30+ countries – you are part of our global family!" },
+      { "title": "300,000+ Partners", "text": "Millions of clients trust us worldwide." },
+      { "title": "$10B Goal", "text": "We grow annually and create new opportunities." },
+      { "title": "6,000+ Products", "text": "Wide assortment for all needs and tastes." }
+    ]
+  },
+  "showcase": {
+    "titleLine1": "Greenleaf – inspired by nature,",
+    "titleLine2": "caring for life!",
+    "brand": "Greenleaf",
+    "descriptionLine1": "a collection of over 6000 eco-friendly, safe, and modern products.",
+    "descriptionLine2": "For you and your family, a healthy choice!",
+    "descriptionLine3": "",
+    "btnInspiration": "Get inspired in the Eco Journal!",
+    "btnShop": "Go to shop products"
+  }
+}

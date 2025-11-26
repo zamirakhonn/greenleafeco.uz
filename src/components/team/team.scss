@@ -1,0 +1,129 @@
+// team.scss
+$primary-color: #4CAF50;
+$text-dark: #1f1f1f;
+$text-medium: #555;
+$background-light: #f8f8f8;
+$card-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+$hover-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+
+.team-section-container {
+  padding: 100px 20px;
+  background-color: $background-light;
+  font-family: 'Poppins', sans-serif;
+
+  .team-header {
+    text-align: center;
+    margin-bottom: 50px;
+
+    .team-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $text-dark;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -10px;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 4px;
+        border-radius: 20px;
+        background: $primary-color;
+      }
+    }
+
+    .team-subtitle {
+      margin-top: 15px;
+      font-size: 1rem;
+      color: $text-medium;
+    }
+  }
+
+  .team-cards-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    .team-card {
+      width: 100%;
+      max-width: 280px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: $card-shadow;
+      text-align: center;
+      padding-bottom: 20px;
+      cursor: pointer;
+      transition: transform .3s, box-shadow .3s;
+
+      &:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: $hover-shadow;
+      }
+
+      .team-image-wrapper {
+        height: 300px;
+        overflow: hidden;
+
+        .team-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: transform .4s;
+        }
+      }
+
+      .team-info {
+        padding: 10px 15px;
+
+        .member-name {
+          font-weight: 700;
+          font-size: 1.1rem;
+          margin-bottom: 5px;
+        }
+
+        .member-title {
+          color: $primary-color;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .member-description {
+          font-size: 0.85rem;
+          color: $text-medium;
+          border-left: 3px solid lighten($primary-color, 30%);
+          padding-left: 8px;
+          font-style: italic;
+          margin-bottom: 10px;
+        }
+
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+
+          .social-icon {
+            font-size: 1.3rem;
+            color: $primary-color;
+            transition: transform .3s;
+
+            &:hover {
+              transform: scale(1.2);
+              color: darken($primary-color, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team-cards-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

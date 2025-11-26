@@ -1,0 +1,105 @@
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.258), rgba(0, 0, 0, 0.3)),
+      url("../../images/hero-nature.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  .showcase-content {
+    text-align: center;
+    color: #fff;
+    max-width: 1000px;
+    backdrop-filter: blur(2px);
+    animation: fadeInUp 1.2s ease;
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 25px;
+      text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    p {
+      font-size: 1.25rem;
+      margin-bottom: 50px;
+      color: #e0e0e0;
+      line-height: 1.7;
+
+      span {
+        font-weight: 700;
+        color: #9be781;
+      }
+    }
+
+    .showcase-btns {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      button {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 32px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border-radius: 14px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      }
+
+      .btn-primary {
+        background: linear-gradient(45deg, #7ed957, #4cae35);
+        color: #fff;
+
+        &:hover {
+          background: linear-gradient(45deg, #6bc548, #399825);
+          transform: translateY(-3px);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .icon {
+          font-size: 1.3rem;
+        }
+      }
+
+      .btn-secondary {
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.3);
+          transform: translateY(-3px);
+          box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .icon {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

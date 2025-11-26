@@ -1,0 +1,40 @@
+{
+  "header": {
+    "home": "首页",
+    "about": "关于我们",
+    "news": "新闻",
+    "products": "生态产品",
+    "contact": "联系"
+  },
+  "about": {
+    "title": "我们是谁？",
+    "intro": "一个基于自然、健康生活和环境清洁的国际品牌。",
+    "buildingAlt": "Greenleaf 大楼",
+    "companyTitle": "关于公司",
+    "companyText1": "Greenleaf（苏州 Greenleaf 日用品有限公司）是一个基于与自然和谐共处的国际品牌。总部位于中国苏州高新技术区。",
+    "companyText2": "我们的目标是为每个家庭提供健康、安全、环保的产品。通过6000多种产品，我们为您带来自然的精华和清洁的环境。",
+    "companyText3": "我们的每一件产品都尊重自然，关注人类健康，并追求创新。",
+    "missionTitle": "我们的使命",
+    "missionSubtitle": "从自然中获得灵感，关爱生活！",
+    "missionText": "我们致力于创造可持续产品，保护人类和地球，使环保生活在全球范围内易于实现。",
+    "toastMessage": "更多详情即将发布！",
+    "features": [
+      { "title": "100% 天然产品", "text": "所有产品均由纯天然原料制成。" },
+      { "title": "质量保证", "text": "以国际认证和高标准保障。" },
+      { "title": "全球业务", "text": "在30多个国家运营 – 您是我们全球大家庭的一部分！" },
+      { "title": "300,000+ 合作伙伴", "text": "全球数百万客户信任我们。" },
+      { "title": "$10B 目标", "text": "我们每年成长并创造新的机会。" },
+      { "title": "6,000+ 产品", "text": "满足各种需求和口味的丰富产品。" }
+    ]
+  },
+  "showcase": {
+    "titleLine1": "Greenleaf – 受自然启发，",
+    "titleLine2": "关爱生活！",
+    "brand": "Greenleaf",
+    "descriptionLine1": "超过6000种环保、安全、现代化产品的合集。",
+    "descriptionLine2": "为您和您的家人提供健康选择！",
+    "descriptionLine3": "",
+    "btnInspiration": "在生态杂志中获得灵感！",
+    "btnShop": "前往购买产品"
+  }
+}

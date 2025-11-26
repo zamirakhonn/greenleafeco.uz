@@ -1,0 +1,117 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background: rgba(255, 255, 255, 0.438);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  .logo img {
+    width: 180px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: rgb(2, 66, 2);
+      font-weight: 600;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #7ed957;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        left: 0;
+        bottom: -4px;
+        background: #7ed957;
+        transition: width 0.3s ease;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+
+  .header-btn {
+    display: flex;
+    gap: 12px;
+
+    img {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+      border-radius: 4px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+        filter: brightness(1.2);
+      }
+    }
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .header {
+    .logo img { width: 220px; }
+    nav ul { gap: 30px; }
+    .header-btn img { width: 32px; height: 32px; }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 12px 20px;
+    .logo img { width: 180px; }
+    nav ul { gap: 25px; li a { font-size: 0.95rem; } }
+    .header-btn img { width: 28px; height: 28px; }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+
+    .logo img { width: 150px; }
+
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .header-btn img { width: 24px; height: 24px; }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    .logo img { width: 130px; }
+    nav ul li a { font-size: 0.9rem; }
+    .header-btn img { width: 20px; height: 20px; }
+  }
+}
