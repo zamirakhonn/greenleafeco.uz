@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import Member1 from '../../images/team2.jpg';
 import Member2 from '../../images/team1.JPG';
-import Member3 from '../../images/woman.jpg';
+import Member3 from '../../images/team3.png';
 import Member4 from '../../images/team4.jpg';
 
 const TeamSection = () => {
@@ -35,10 +35,10 @@ const TeamSection = () => {
             <img src={Member1} alt="Movluda Asqarxojayeva" className="team-image" />
           </div>
           <div className="team-info">
-            <h3 className="member-name">Azamjon Ma'rufov</h3>
+            <h3 className="member-name">A'zamjon Ma'rufov</h3>
             <p className="member-title">Bosh direktor</p>
             <p className="member-description">
-              Barcharqor hayot va atrof-muhitni muhofaza qilishga ishtiyoqli yetakchi
+            “To‘g‘ri niyat, yagona maqsad va jamoaviy ruh — bizning eng katta strategiyamiz.”
             </p>
             <div className="social-icons">
               <FiInstagram className="social-icon" />
@@ -73,7 +73,7 @@ const TeamSection = () => {
           </div>
         </div>
 
-        {/* 3. Emma Rodriguez */}
+        {/* 3. Movluda Asqarxo‘jayeva */}
         <div className="team-card" onClick={() => handleClick("Emma Rodriguez")}>
           <div className="team-image-wrapper">
             <img src={Member3} alt="Emma Rodriguez" className="team-image" />
@@ -82,7 +82,7 @@ const TeamSection = () => {
             <h3 className="member-name">Movluda Asqarxo‘jayeva</h3>
             <p className="member-title">Ijrochi direktor</p>
             <p className="member-description">
-              “To‘g‘ri niyat, yagona maqsad va jamoaviy ruh — bizning eng katta strategiyamiz.”
+              “Barqaror hayot — atrof-muhit muhofazasi uchun yetakchiman”
             </p>
             <div className="social-icons">
               <FiInstagram className="social-icon" />
@@ -91,7 +91,7 @@ const TeamSection = () => {
           </div>
         </div>
 
-        {/* 4. Michael Park */}
+        {/* 4. Rahmatjon Yunusov */}
         <div className="team-card" onClick={() => handleClick("Michael Park")}>
           <div className="team-image-wrapper">
             <img src={Member4} alt="Michael Park" className="team-image" />

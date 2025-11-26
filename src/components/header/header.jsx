@@ -26,6 +26,12 @@ const Header = () => {
         <img src={Logo} alt="Greenleaf Logo" />
       </div>
 
+      {/* Hamburger */}
+      <input type="checkbox" id="nav-toggle" className="nav-toggle" />
+      <label htmlFor="nav-toggle" className="nav-toggle-label">
+        <span></span>
+      </label>
+
       <nav>
         <ul>
           <li><Link to="/">{t("header.home")}</Link></li>
@@ -34,15 +40,14 @@ const Header = () => {
           <li><Link to="/products">{t("header.products")}</Link></li>
           <li><Link to="/contact">{t("header.contact")}</Link></li>
         </ul>
+        <div className="header-btn">
+          <img onClick={() => changeLang("uz")} src={Uzbekistan} alt="Uzbekistan" />
+          <img onClick={() => changeLang("ru")} src={Russia} alt="Russia" />
+          <img onClick={() => changeLang("en")} src={Usa} alt="USA" />
+          <img onClick={() => changeLang("kz")} src={Kazakhstan} alt="Kazakhstan" />
+          <img onClick={() => changeLang("cn")} src={China} alt="China" />
+        </div>
       </nav>
-
-      <div className="header-btn">
-        <img onClick={() => changeLang("uz")} src={Uzbekistan} alt="Uzbekistan" />
-        <img onClick={() => changeLang("ru")} src={Russia} alt="Russia" />
-        <img onClick={() => changeLang("en")} src={Usa} alt="USA" />
-        <img onClick={() => changeLang("kz")} src={Kazakhstan} alt="Kazakhstan" />
-        <img onClick={() => changeLang("cn")} src={China} alt="China" />
-      </div>
     </header>
   );
 };

@@ -4,6 +4,8 @@ import Header from './components/header/header'
 import Product from './pages/product/product'
 import About from './components/about/about';
 import Contact from './components/contact/contact'
+import Journal from './pages/journal/journal'; // updated path
+
 import './App.css';
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/product' element={<Product />} />
         <Route path='/about' element={<About />} />
+        <Route path='/journal' element={<Journal />} />
         <Route path='/contact' element={<Contact />} />
+        
       </Routes>
     </div>
   );

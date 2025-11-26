@@ -19,99 +19,175 @@
     }
   }
 
-  nav ul {
+  nav {
     display: flex;
-    gap: 40px;
-    list-style: none;
+    align-items: center;
+    gap: 20px;
 
-    li a {
-      text-decoration: none;
-      color: rgb(2, 66, 2);
-      font-weight: 600;
-      font-size: 1rem;
-      position: relative;
-      transition: color 0.3s ease;
+    ul {
+      display: flex;
+      gap: 40px;
+      list-style: none;
 
-      &:hover {
-        color: #7ed957;
+      li a {
+        text-decoration: none;
+        color: rgb(2, 66, 2);
+        font-weight: 600;
+        font-size: 1rem;
+        position: relative;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #7ed957;
+        }
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 2px;
+          left: 0;
+          bottom: -4px;
+          background: #7ed957;
+          transition: width 0.3s ease;
+        }
+
+        &:hover:after {
+          width: 100%;
+        }
       }
+    }
 
-      &:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        left: 0;
-        bottom: -4px;
-        background: #7ed957;
-        transition: width 0.3s ease;
-      }
+    .header-btn {
+      display: flex;
+      gap: 12px;
 
-      &:hover:after {
-        width: 100%;
+      img {
+        width: 36px;
+        height: 36px;
+        object-fit: contain;
+        border-radius: 4px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-2px) scale(1.05);
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+          filter: brightness(1.2);
+        }
       }
     }
   }
+}
 
-  .header-btn {
-    display: flex;
-    gap: 12px;
+/* ===== HAMBURGER ===== */
+.nav-toggle {
+  display: none;
+}
 
-    img {
-      width: 36px;
-      height: 36px;
-      object-fit: contain;
-      border-radius: 4px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-      cursor: pointer;
+.nav-toggle-label {
+  display: none;
+  position: absolute;
+  top: 18px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 1001;
 
-      &:hover {
-        transform: translateY(-2px) scale(1.05);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
-        filter: brightness(1.2);
-      }
-    }
+  span,
+  span::before,
+  span::after {
+    display: block;
+    background: rgb(2, 66, 2);
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    position: absolute;
+    transition: all 0.3s;
   }
+
+  span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  span::before {
+    content: '';
+    top: -10px;
+  }
+
+  span::after {
+    content: '';
+    top: 10px;
+  }
+}
+
+/* Hamburger toggle animation */
+.nav-toggle:checked + .nav-toggle-label span {
+  background: transparent;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::after {
+  transform: rotate(-45deg);
+  top: 0;
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 1200px) {
-  .header {
-    .logo img { width: 220px; }
-    nav ul { gap: 30px; }
-    .header-btn img { width: 32px; height: 32px; }
-  }
-}
-
-@media (max-width: 992px) {
-  .header {
-    padding: 12px 20px;
-    .logo img { width: 180px; }
-    nav ul { gap: 25px; li a { font-size: 0.95rem; } }
-    .header-btn img { width: 28px; height: 28px; }
-  }
-}
-
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    gap: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 12px 20px;
 
-    .logo img { width: 150px; }
-
-    nav ul {
-      flex-direction: column;
-      gap: 10px;
+    .logo img {
+      width: 150px;
     }
 
-    .header-btn img { width: 24px; height: 24px; }
+    nav {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: rgba(255,255,255,0.95);
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 0;
+      display: none;
+
+      ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .header-btn {
+        flex-direction: row;
+        gap: 10px;
+      }
+    }
+
+    .nav-toggle-label {
+      display: block;
+    }
+
+    .nav-toggle:checked ~ nav {
+      display: flex;
+    }
   }
 }
 
 @media (max-width: 480px) {
   .header {
     .logo img { width: 130px; }
+
     nav ul li a { font-size: 0.9rem; }
-    .header-btn img { width: 20px; height: 20px; }
+
+    .header-btn img { width: 24px; height: 24px; }
   }
 }
